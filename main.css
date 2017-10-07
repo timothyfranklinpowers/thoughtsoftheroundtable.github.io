@@ -1,0 +1,172 @@
+@font-face{
+    font-family: TitleFont;
+    src: url(Fonts/Quicksand-Regular.otf);
+}
+@font-face{
+    font-family: TitleFont2;
+    src: url(Fonts/BEBAS___.TTF);
+}
+@font-face{
+    font-family: TitleFont3;
+    src: url(Fonts/SinkinSans-200XLight.otf);
+}
+body, html{
+    height: 100%;
+    margin: 0;
+    font-family: TitleFont;
+    background-color: rgba(122,114,108,1.0);
+    color: white;
+}
+#Navigation{
+    background-color: rgba(122,114,108,1.0);
+	margin: 0px auto;
+	text-align: center;
+    font-family: TitleFont3;
+}
+#Navigation a{
+	float:inherit;
+    padding: 50px;
+	font-size: 25px;
+	text-decoration: none;
+	color: white;
+}
+#Navigation a:hover{
+	color:rgba(200,200,200,1.0)
+}
+.Parallax{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.75;
+}
+.index .Parallax{
+  background-image: url(Images/ProfilePhoto.jpg);
+  min-height: 868px;
+}
+.about .Parallax{
+  background-image: url(Images/Code.jpeg);  
+  min-height: 700px;
+}
+.skills .Parallax{
+  background-image: url(Images/Server.jpg);
+  min-height: 700px;
+}
+.contact .Parallax{
+  background-image: url(Images/Calculator.jpeg);
+  min-height: 700px;
+}
+.Name_Box{
+    position: absolute;
+    width: 100%;
+    left: auto;
+    text-align: center;
+    font-family: TitleFont2;
+}
+.index .Name_Box{
+  top: 68%;  
+}
+.about .Name_Box{
+  top: 50%;  
+}
+.skills .Name_Box{
+  top: 50%;  
+}
+.contact .Name_Box{
+  top: 50%;  
+}
+.Name_Box #Title_Name{
+    font-size: 80px;
+    background-color: rgba(20,20,20,0.5);
+    letter-spacing: 5px;
+}
+#Content{
+    padding-top: 0px;
+    height:1700px;
+    width: 95%;
+    margin: 10px auto 10px auto;
+    background-color:rgba(25,25,25,0.5);
+    font-size:36px;
+    text-align: center;
+}
+.about #Content{
+    height: 1600px;
+}
+.skills #Content{
+    height: 3000px;
+}
+.contact #Content{
+    height: 600px;
+}
+.Titles{
+    font-family: TitleFont3;
+}
+.Paragraphs{
+    text-align:center;
+    /*border: bold;*/
+    margin: 10px auto 10px auto;
+    background-color:rgba(122,114,108,0.5);
+    width: 75%;
+    padding: 3px 20px 3px 20px;
+    /*border-style: ridge;
+    border-width: thick;*/
+}
+.links{
+    text-decoration: none;
+    color:deepskyblue;
+}
+.Lists{
+    width: 17%;
+    text-align: left;
+    float: left;
+    position: relative;
+    left: 10%;
+    padding: 10px;
+    margin: 10px 4% 30px 4%;
+}
+.Form {
+    margin:10px auto;
+    padding: 20px 12px 10px 20px;
+}
+.Form label{
+    margin:25px 0px 15px 0px;
+    padding:0px;
+    display:block;
+    font-weight: bold;
+    font-family: TitleFont3;
+}
+.Form .namebox{
+    width: 24.5%;
+}
+.Form .emailbox{
+    width: 50%;
+}
+.Form .messagetextarea{
+    height: 100px;
+    width: 50%
+}
+.Form input[type=submit], .Form input[type=button]{
+    background: #4B99AD;
+    padding: 8px 15px 8px 15px;
+    border: none;
+    color: #fff;
+}
+.Form input[type=submit]:hover, .Form input[type=button]:hover{
+    background: #4691A4;
+    box-shadow:none;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+}
+.Form .required{
+    color:red;
+}
+#Footer{
+    text-align: center;
+    padding-bottom: 10px;
+    font-family: TitleFont3;
+}
+@media only screen and (max-device-width: 1024px){
+    .Parallax {background-attachment: scroll;}
+    .Name_Box #Title_Name {font-size: 40px;}
+    .Name_Box {top: 5%;}
+}
